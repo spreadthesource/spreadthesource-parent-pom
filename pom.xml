@@ -57,7 +57,7 @@
 
 	<repositories>
 		<repository>
-			<id>devlab722.releases</id>
+			<id>devlab722-repo</id>
 			<url>http://nexus.devlab722.net/nexus/content/repositories/releases</url>
 			<releases>
 				<enabled>true</enabled>
@@ -68,7 +68,7 @@
 		</repository>
 
 		<repository>
-			<id>devlab722.snapshots</id>
+			<id>devlab722-snapshot-repo</id>
 			<url>http://nexus.devlab722.net/nexus/content/repositories/snapshots</url>
 			<releases>
 				<enabled>false</enabled>
@@ -81,11 +81,11 @@
 
 	<distributionManagement>
 		<repository>
-			<id>devlab722.releases</id>
+			<id>devlab722-repo</id>
 			<url>http://nexus.devlab722.net/nexus/content/repositories/releases</url>
 		</repository>
 		<snapshotRepository>
-			<id>devlab722.snapshots</id>
+			<id>devlab722-snapshot-repo</id>
 			<url>http://nexus.devlab722.net/nexus/content/repositories/snapshots</url>
 		</snapshotRepository>
 	</distributionManagement>
