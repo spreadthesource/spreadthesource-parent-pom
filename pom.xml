@@ -1,0 +1,92 @@
+<project
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://maven.apache.org/POM/4.0.0">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>com.spreadthesource</groupId>
+	<artifactId>parent-pom</artifactId>
+	<version>1.0</version>
+	<packaging>pom</packaging>
+	<name>Spread The Source - Parent POM</name>
+	<url>http://spreadthesource.com/</url>
+
+	<issueManagement>
+		<system>Github</system>
+		<url>http://github.com/spreadthesource</url>
+	</issueManagement>
+
+	<licenses>
+		<license>
+			<name>Apache Software License 2.0</name>
+			<url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+			<distribution>repo</distribution>
+		</license>
+	</licenses>
+
+	<organization>
+		<name>Spread The Source</name>
+		<url>http://spreadthesource.com</url>
+	</organization>
+
+	<developers>
+		<developer>
+			<id>ccordenier</id>
+			<name>Christophe Cordenier</name>
+			<url>http://twitter.com/kordenier</url>
+			<timezone>+1</timezone>
+		</developer>
+
+		<developer>
+			<id>gounthar</id>
+			<name>Bruno Verachten</name>
+			<url>http://twitter.com/gounthar_fr</url>
+			<timezone>+1</timezone>
+		</developer>
+
+		<developer>
+			<id>robink</id>
+			<name>Robin Komiwes</name>
+			<url>http://twitter.com/robinkomiwes</url>
+			<timezone>+1</timezone>
+		</developer>
+	</developers>
+
+	<ciManagement>
+		<system>Hudson</system>
+		<url>http://ci.dev.kalaari.net/hudson/</url>
+	</ciManagement>
+
+	<repositories>
+		<repository>
+			<id>devlab722.releases</id>
+			<url>http://nexus.devlab722.net/nexus/content/repositories/releases</url>
+			<releases>
+				<enabled>true</enabled>
+			</releases>
+			<snapshots>
+				<enabled>false</enabled>
+			</snapshots>
+		</repository>
+
+		<repository>
+			<id>devlab722.snapshots</id>
+			<url>http://nexus.devlab722.net/nexus/content/repositories/snapshots</url>
+			<releases>
+				<enabled>false</enabled>
+			</releases>
+			<snapshots>
+				<enabled>true</enabled>
+			</snapshots>
+		</repository>
+	</repositories>
+
+	<distributionManagement>
+		<repository>
+			<id>devlab722.releases</id>
+			<url>http://nexus.devlab722.net/nexus/content/repositories/releases</url>
+		</repository>
+		<snapshotRepository>
+			<id>devlab722.snapshots</id>
+			<url>http://nexus.devlab722.net/nexus/content/repositories/snapshots</url>
+		</snapshotRepository>
+	</distributionManagement>
+</project>
