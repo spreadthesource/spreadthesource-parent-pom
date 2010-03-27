@@ -4,7 +4,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.spreadthesource</groupId>
 	<artifactId>parent-pom</artifactId>
-	<version>1.1</version>
+	<version>1.2</version>
 	<packaging>pom</packaging>
 	<name>Spread The Source - Parent POM</name>
 	<url>http://spreadthesource.com/</url>
@@ -89,4 +89,20 @@
 			<url>http://nexus.devlab722.net/nexus/content/repositories/snapshots</url>
 		</snapshotRepository>
 	</distributionManagement>
+	
+	<build>
+    <plugins>
+      <plugin>
+            <artifactId>maven-source-plugin</artifactId>
+            <executions>
+                <execution>
+                    <id>attach-sources</id>
+                    <goals>
+                        <goal>jar</goal>
+                    </goals>
+                </execution>
+            </executions>
+        </plugin>
+    </plugins>
+</build>
 </project>
